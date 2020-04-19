@@ -1,1 +1,1 @@
-Check here for live preview
+Check [here](https://clipboard-page.netlify.app) for live preview
