@@ -153,16 +153,30 @@ footer a:hover {
     width: 100%;
     margin: 20px auto;
   }
+  div.right {
+    padding-left: 0;
+  }
+  h3 {
+    margin: 0;
+  }
+  .flex {
+    padding: 0 2rem;
+  }
   .flex,
   footer,
   .left_links {
     flex-direction: column;
     text-align: center;
   }
-  footer div {
-    margin-bottom: 15px;
+  footer div,
+  .flex > div,
+  .left_links > div {
+    margin-bottom: 20px;
+  }
+  .company_logo img {
+    margin-bottom: 20px;
   }
   .left_links a:first-child {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 }
