@@ -156,8 +156,8 @@ footer a:hover {
   div.right {
     padding-left: 0;
   }
-  h3 {
-    margin: 0;
+  h4 {
+    margin: 25px 0;
   }
   .flex {
     padding: 0 2rem;
@@ -168,15 +168,18 @@ footer a:hover {
     flex-direction: column;
     text-align: center;
   }
-  footer div,
+
   .flex > div,
   .left_links > div {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+  }
+  footer div {
+    margin-bottom: 15px;
   }
   .company_logo img {
     margin-bottom: 20px;
   }
   .left_links a:first-child {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
 }
