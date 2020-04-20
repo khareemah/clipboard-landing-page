@@ -11,6 +11,23 @@ body {
   background-repeat: no-repeat;
   font-family: "Bai Jamjuree", sans-serif;
 }
+p,
+a {
+  color: hsl(201, 11%, 66%);
+  line-height: 24px;
+}
+h1,
+h3,
+h4 {
+  color: hsl(210, 10%, 33%);
+  font-weight: 600;
+}
+h1 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 24px;
+}
 .container {
   max-width: 1400px;
   margin: auto;
@@ -20,14 +37,12 @@ body {
   padding: 0 2rem;
 }
 .center p {
-  font-size: 0.9rem;
   max-width: 500px;
   margin: auto;
   margin-bottom: 2rem;
-  line-height: 24px;
 }
 .header {
-  padding: 7rem 0;
+  padding: 7rem 2rem;
 }
 .logo {
   width: 100px;
@@ -42,12 +57,15 @@ body {
 }
 button {
   color: white;
-  font-size: 0.8rem;
+  cursor: pointer;
+  font-size: 16px;
   border-radius: 30px;
   border: none;
   outline: none;
-  padding: 10px 5px;
-  width: 150px;
+  padding: 10px 18px;
+}
+button:hover {
+  opacity: 0.8;
 }
 .green {
   margin-right: 4px;
@@ -57,7 +75,7 @@ button {
 .blue {
   margin-left: 4px;
   background-color: hsl(233, 100%, 69%);
-  box-shadow: 0px 2px 0px hsl(233, 100%, 50%);
+  box-shadow: 0px 2px 0px hsl(233, 100%, 55%);
 }
 .flex {
   display: flex;
@@ -67,12 +85,11 @@ button {
 .flex > div {
   flex: 1;
 }
-/* remove this padding on mobile */
-.right {
+div.right {
   padding-left: 5rem;
 }
-.right p {
-  max-width: 250px;
+div.right p {
+  max-width: 350px;
 }
 h4 {
   margin: 0;
@@ -82,17 +99,21 @@ h4 {
   text-align: center;
 }
 .padded p {
-  max-width: 300px;
+  max-width: 400px;
   margin: auto;
 }
 .company_logo img {
   max-width: 100%;
 }
 footer {
+  background-color: hsla(201, 11%, 66%, 0.3);
   display: flex;
   align-items: center;
-  margin-top: 6rem;
-  padding: 0 4rem 2rem;
+  margin-top: 2rem;
+  padding: 2rem 4rem;
+}
+footer a:hover {
+  color: hsl(171, 66%, 44%);
 }
 .footer_logo {
   width: 40px;
@@ -100,6 +121,10 @@ footer {
 .right_links {
   flex-basis: 30%;
   text-align: right;
+  transition: 2s;
+}
+.right_links img:hover {
+  transform: scale(1.1);
 }
 .right_links a {
   padding: 6px;
@@ -111,7 +136,32 @@ footer {
 }
 .left_links a {
   display: block;
-  color: inherit;
+  color: hsl(210, 10%, 33%);
   text-decoration: none;
-  line-height: 26px;
+  line-height: 24px;
+}
+@media screen and (max-width: 700px) {
+  .green {
+    margin-left: 0;
+  }
+  .blue {
+    margin-right: 0;
+  }
+  button {
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+  }
+  .flex,
+  footer,
+  .left_links {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer div {
+    margin-bottom: 15px;
+  }
+  .left_links a:first-child {
+    margin-bottom: 15px;
+  }
 }
