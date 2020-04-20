@@ -125,6 +125,7 @@ footer a:hover {
 }
 .right_links img:hover {
   transform: scale(1.1);
+  fill: hsl(171, 66%, 44%);
 }
 .right_links a {
   padding: 6px;
