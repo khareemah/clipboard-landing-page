@@ -95,11 +95,11 @@ h4 {
   margin: 0;
 }
 .padded > div {
-  padding: 0 4rem;
+  padding: 0 2rem;
   text-align: center;
 }
 .padded p {
-  max-width: 400px;
+  max-width: 500px;
   margin: auto;
 }
 .company_logo img {
