@@ -81,6 +81,7 @@ button:hover {
   display: flex;
   margin: 4rem 0;
   align-items: center;
+  border: 2px solid green;
 }
 .flex > div {
   flex: 1;
@@ -97,6 +98,7 @@ h4 {
 .padded > div {
   padding: 0 2rem;
   text-align: center;
+  border: 2px solid purple;
 }
 .padded p {
   max-width: 500px;
@@ -161,6 +163,9 @@ footer a:hover {
   }
   .flex {
     padding: 0 2rem;
+  }
+  .padded > div {
+    padding: 0;
   }
   .flex,
   footer,
